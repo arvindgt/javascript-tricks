@@ -11,4 +11,4 @@ function Square(x, y) {
 
 var square2 = new Square(2, 3);
 
-console.log(square1.area(), square2.area());
+console.log(square1.area(), square2.area()); // NaN, 6
