@@ -1,4 +1,4 @@
-function typeCheck(object) {
+function objectWithTypeChecked(object) {
     const tempObject = {};
     Object.keys(object).forEach(key => {
         const [keyName, keyType] = key.split('_');
@@ -33,7 +33,7 @@ const obj1 = {
     email_string: 'admin@admin.com',
     isadmin_boolean: true
 }
-const validatingObject = typeCheck(obj1)
+const validatingObject = objectWithTypeChecked(obj1)
 
 validatingObject.phone_int = 234;
 
